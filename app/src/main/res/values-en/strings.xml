@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cube Game</string>
+    <string name="title">Game of build-up cubes</string>
+    <string name="titleTutoLvl1">Move the cube to its proper position</string>
+    <string name="titleTuto">Move each cube to its proper position</string>
+    <string name="winMessage">Well done, would you like to play the next level ?</string>
+    <string name="lastWinMessage">Well done, you have completed the game.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enregistrer">Play</string>
+    <string name="level">Choose the level</string>
+    <string name="existMessage">Are you sûr ?</string>
+
+    <string name="exp_3etoiles_1">You are really gifted.</string>
+    <string name="exp_3etoiles_2">Amazing !َ</string>
+    <string name="exp_3etoiles_3">Well done !</string>
+    <string name="exp_3etoiles_4">I\'m very proud of you </string>
+
+    <string name="exp_2etoiles_1">Well done !</string>
+    <string name="exp_2etoiles_2">Did you do it alone ?</string>
+    <string name="exp_2etoiles_3">your efforts are paying off !</string>
+    <string name="exp_2etoiles_4">what a courage !</string>
+
+    <string name="exp_1etoiles_1">You have the resources in you to do it.</string>
+    <string name="exp_1etoiles_2">Take your time, I believe in you.</string>
+    <string name="exp_1etoiles_3">It\s just a matter of time and practice.</string>
+    <string name="exp_1etoiles_4">You have the right to be persistent .</string>
+
+    <string name="text_lang">Language</string>
+    <string name="audio_lang">Voice language</string>
+    <string name="confirmBtn">Save</string>
+    <string name="cancelBtn">Cancel</string>
+    <string name="playBtn">Play Game</string>
+    <string name="settingTitle">Settings</string>
+</resources>

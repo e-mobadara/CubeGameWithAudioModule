@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_result"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cubegamebg"
+    tools:context="com.med.com.cubegame.Result"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/etoilesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/etoile2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/reward"
+            android:visibility="invisible" />  <!-- Etoile 2 -->
+
+        <ImageView
+            android:id="@+id/etoile3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/etoile2"
+            android:src="@drawable/reward"
+            android:visibility="invisible" /> <!-- Etoile 3 -->
+
+        <ImageView
+            android:id="@+id/etoile1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/etoile2"
+            android:src="@drawable/reward"
+            android:visibility="invisible" /><!-- Etoile 1 -->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etoile1"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:text="test"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:fontFamily="@font/font_fr"/><!-- TextView -->
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView"
+            android:background="@drawable/homeicone"
+            android:layout_centerHorizontal="true"
+            android:onClick="homePage"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

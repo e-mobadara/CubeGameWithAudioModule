@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">لعبة تكديس المكعبات</string>
+    <string name="title">لعبة تكديس المكعبات</string>
+    <string name="titleTutoLvl1">ضع المكعب في مكانه المناسب</string>
+    <string name="titleTuto">ضع المكعبات في مكانها المناسب</string>
+    <string name="winMessage">أحسنت، أتمم اللعبة ؟</string>
+    <string name="lastWinMessage">أحسنت، لقد أتممت اللعبة.</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="level">إختيار الصعوبة</string>
+    <string name="enregistrer">إبدأ اللعبة</string>
+    <string name="existMessage">هل أنت متأكد ؟</string>
+
+    <string name="exp_3etoiles_1">أنت موهوب جدا.</string>
+    <string name="exp_3etoiles_2">رائع.</string>
+    <string name="exp_3etoiles_3">احسنت.</string>
+    <string name="exp_3etoiles_4">أنا فخور بك جدا.</string>
+
+    <string name="exp_2etoiles_1">أحسنت.</string>
+    <string name="exp_2etoiles_2">هل فعلت هذا بمفردك؟</string>
+    <string name="exp_2etoiles_3">جهودك تؤتي ثمارها!</string>
+    <string name="exp_2etoiles_4">يا لها من شجاعة !</string>
+    <string name="exp_1etoiles_1">لديك الموارد للإحراز ثلاتة نجوم.</string>
+    <string name="exp_1etoiles_2">خذ وقتك ، أنا أؤمن بك.</string>
+    <string name="exp_1etoiles_3">انها فقط مسألة وقت وممارسة.</string>
+    <string name="exp_1etoiles_4">لديك الحق في أن تستمر.</string>
+    <string name="text_lang">اللغة</string>
+    <string name="audio_lang">لغة الصوت</string>
+    <string name="confirmBtn">حفظ</string>
+    <string name="cancelBtn">إلغاء</string>
+    <string name="playBtn">إبدإ اللعبة</string>
+    <string name="settingTitle">إعدادات</string>
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.med.com.cubegame.SettingActivity"
+    android:id="@+id/activity_setting"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingTitle"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:fontFamily="@font/blacklist"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/textLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLayout"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_lang"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:fontFamily="@font/blacklist"
+            android:layout_marginRight="50dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/audio_lang"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:fontFamily="@font/blacklist"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginLeft="50dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/radiosLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textLayout"
+        android:layout_above="@+id/bottomlayout"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/LangRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp">
+
+            <RadioButton
+                android:id="@+id/text_ar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="العربية"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/blacklist"/>
+
+            <RadioButton
+                android:id="@+id/text_fr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Français"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/blacklist"/>
+
+            <RadioButton
+                android:id="@+id/text_en"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="English"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/blacklist" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/AudioRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/LangRadioBtn"
+            android:layout_marginLeft="50dp">
+
+            <RadioButton
+                android:id="@+id/audio_ar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="العربية"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/blacklist"  />
+
+            <RadioButton
+                android:id="@+id/audio_fr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Français"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/blacklist"  />
+
+            <RadioButton
+                android:id="@+id/audio_en"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="English"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/blacklist"  />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/buttonfont"
+            android:text="@string/confirmBtn"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="86dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/buttonfont"
+            android:text="@string/cancelBtn"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/change_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/confirmBtn"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/buttonfont"
+            android:text="Audio Settings"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

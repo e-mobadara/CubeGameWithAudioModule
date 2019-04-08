@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebg"
+    tools:context="com.med.com.cubegame.Levels.Level1"
+    android:id="@+id/activity_level1">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </RelativeLayout><!-- LEFT LAYOUT -->
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/refresh"
+            android:onClick="reset"/><!--  RESET -->
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/reset"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/help"
+            android:onClick="help" /><!-- HELP -->
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/home"
+            android:onClick="homePage"/><!-- HOME -->
+
+    </RelativeLayout><!-- RIGHT LAYOUT -->
+
+    <RelativeLayout
+        android:id="@+id/middleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/left_layout"
+        android:layout_toStartOf="@+id/right_layout">
+
+
+
+    </RelativeLayout>
+
+
+    <Chronometer
+        android:id="@+id/chrono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tuto1"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tuto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:fontFamily="@font/font_fr"
+        android:text="@string/titleTutoLvl1"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        android:textAlignment="center"/><!-- Title text -->
+
+    <ImageView
+        android:id="@+id/objectif"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/obj1" /><!-- OBJECTIF SQUARE -->
+
+    <ImageView
+        android:id="@+id/square"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/objectif"
+        android:layout_marginStart="53dp"
+        android:layout_toEndOf="@+id/objectif"
+        android:src="@drawable/square1" /><!-- SQUARE -->
+
+    <ImageView
+        android:id="@+id/hand"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/hand"
+        android:visibility="invisible" /><!-- HAND -->
+
+
+</RelativeLayout>

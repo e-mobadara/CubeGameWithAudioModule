@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Les cubes cumulés</string>
+    <string name="title">Jeu des cubes cumulés</string>
+    <string name="titleTutoLvl1">Déplace le cube vers sa position appropriée</string>
+    <string name="titleTuto">Déplace les cubes dans leurs positions appropriés</string>
+    <string name="winMessage">Bien joué, souhaiteriez-vous continuer le jeu ?</string>
+    <string name="lastWinMessage">Bien joué, vous avez terminé le jeu.</string>
+
+    <string name="enregistrer">Jouer</string>
+    <string name="level">Choisir le niveau</string>
+    <string name="existMessage">Etes-vous sûr ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+    <string name="exp_3etoiles_1">Tu es vraiment doué.</string>
+    <string name="exp_3etoiles_2">Génial !</string>
+    <string name="exp_3etoiles_3">Bravo !</string>
+    <string name="exp_3etoiles_4">Je suis fier(e) de toi.</string>
+
+    <string name="exp_2etoiles_1">Bien joué !</string>
+    <string name="exp_2etoiles_2">As tu fait cela tout seul ?</string>
+    <string name="exp_2etoiles_3">Tes efforts portent leurs fruits !</string>
+    <string name="exp_2etoiles_4">Quel courage !</string>
+
+    <string name="exp_1etoiles_1">Tu as les ressources en toi pour y arriver.</string>
+    <string name="exp_1etoiles_2">Prends ton temps, je crois en toi.</string>
+    <string name="exp_1etoiles_3">Ce n’est qu’une question de temps et d\'entraînement.</string>
+    <string name="exp_1etoiles_4">tu as le droit d\'être persistant.</string>
+
+    <string name="text_lang">Langue</string>
+    <string name="audio_lang">Langue d\'audio</string>
+    <string name="confirmBtn">Sauvegarder</string>
+    <string name="cancelBtn">Annuler</string>
+    <string name="playBtn">Play Game</string>
+    <string name="settingTitle">Paramètres</string>
+</resources>

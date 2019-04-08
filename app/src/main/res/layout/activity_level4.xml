@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.med.com.cubegame.Levels.Level4"
+    android:background="@drawable/gamebg"
+    android:id="@+id/activity_level4">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/refresh"
+            android:onClick="reset"/>
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/home"
+            android:onClick="homePage" />
+
+    </RelativeLayout>
+
+    <Chronometer
+        android:id="@+id/chrono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tuto4"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tuto4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/titleTuto"
+        android:fontFamily="@font/font_fr"
+        android:textColor="#FFF"
+        android:textSize="50sp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/objectif"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/obj1" />
+
+    <ImageView
+        android:id="@+id/objectif2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/objectif"
+        android:layout_alignStart="@+id/objectif"
+        android:src="@drawable/obj2" />
+
+    <ImageView
+        android:id="@+id/objectif3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/objectif2"
+        android:layout_alignStart="@+id/objectif2"
+        android:src="@drawable/obj3" />
+
+    <ImageView
+        android:id="@+id/objectif4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/objectif3"
+        android:layout_alignStart="@+id/objectif3"
+        android:src="@drawable/obj4" />
+
+    <ImageView
+        android:id="@+id/square"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/square2"
+        android:layout_alignStart="@+id/square2"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/square1" />
+
+    <ImageView
+        android:id="@+id/square2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/square3"
+        android:layout_alignStart="@+id/square3"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/square2" />
+
+    <ImageView
+        android:id="@+id/square3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/square4"
+        android:layout_toStartOf="@+id/square4"
+        android:src="@drawable/square3" />
+
+    <ImageView
+        android:id="@+id/square4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/objectif2"
+        android:layout_marginEnd="32dp"
+        android:layout_toStartOf="@+id/right_layout"
+        android:src="@drawable/square4" />
+
+</RelativeLayout>
