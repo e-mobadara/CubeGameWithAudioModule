@@ -18,7 +18,7 @@ import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.med.com.cubegame.audiomanaging.moblibAudioFileManager;
+import com.e_mobadara.audiomanaging.moblibAudioFileManager;
 import com.med.com.cubegame.MainActivity;
 import com.med.com.cubegame.R;
 import com.med.com.cubegame.Result;

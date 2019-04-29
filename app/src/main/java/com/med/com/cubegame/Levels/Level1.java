@@ -11,6 +11,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +20,7 @@ import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.med.com.cubegame.audiomanaging.moblibAudioFileManager;
+import com.e_mobadara.audiomanaging.moblibAudioFileManager;
 import com.med.com.cubegame.MainActivity;
 import com.med.com.cubegame.R;
 import com.med.com.cubegame.Result;
@@ -102,7 +103,12 @@ public class Level1 extends AppCompatActivity {
                                 square.setY(objectif.getY());
                                 repeat--;
 
-                                mp.start();
+                                try {
+                                    mp.start();
+                                } catch (Exception e) {
+                                    Log.d("exception:" ," " + e);
+                                }
+
 
                                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                                     @Override
@@ -124,7 +130,11 @@ public class Level1 extends AppCompatActivity {
                                 });
 
                                 if(repeat==0) {
-                                    mp.stop();
+                                    try {
+                                        mp.stop();
+                                    }catch (Exception e) {
+                                        Log.d("exception:" ," " + e);
+                                    }
 
                                     //end time :
                                     SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
@@ -201,7 +211,9 @@ public class Level1 extends AppCompatActivity {
         if(MainActivity.audioLang.equals("en")) {
             mp = moblibAudioFileManager.getRandomAudioFile(this,"excellent","AN");
         }else if(MainActivity.audioLang.equals("fr")){
-            mp = mp = moblibAudioFileManager.getRandomAudioFile(this,"excellent","FR");
+            mp = moblibAudioFileManager.getRandomAudioFile(this,"excellent","FR");
+        }else{
+            mp = moblibAudioFileManager.getRandomAudioFile(this,"excellent","AR");
         }
 
         //start time :

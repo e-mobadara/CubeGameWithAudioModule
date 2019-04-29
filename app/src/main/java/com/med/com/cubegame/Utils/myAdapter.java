@@ -4,7 +4,6 @@ import android.view.LayoutInflater;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.med.com.cubegame.R;
@@ -24,7 +23,7 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.ViewHolder> {
     public myAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
         View itemLayoutView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.img_row, null);
+                .inflate(R.layout.img_row_app, null);
 
         // create ViewHolder
         ViewHolder viewHolder = new ViewHolder(itemLayoutView);

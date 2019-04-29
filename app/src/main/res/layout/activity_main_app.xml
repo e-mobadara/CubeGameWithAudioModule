@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cubegamebg"
+    tools:context="com.med.com.cubegame.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/blacklist"
+        android:text="@string/title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50dp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/playBtn"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:fontFamily="@font/buttonfont"
+            android:background="@drawable/buttonshape"
+            android:onClick="startLevel"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/settingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/settingTitle"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:fontFamily="@font/buttonfont"
+            android:layout_toEndOf="@id/playBtn"
+            android:onClick="settings"/>
+
+        <Button
+            android:id="@+id/musicBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/music_on"
+            android:layout_below="@+id/settingBtn"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CubeGame.iml" filepath="$PROJECT_DIR$/CubeGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/audioManagingModule/audioManagingModule.iml" filepath="$PROJECT_DIR$/audioManagingModule/audioManagingModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/audioModule/audioModule.iml" filepath="$PROJECT_DIR$/audioModule/audioModule.iml" />
     </modules>
   </component>
 </project>

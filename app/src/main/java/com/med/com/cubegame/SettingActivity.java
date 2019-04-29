@@ -20,7 +20,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 
-import com.med.com.cubegame.audiomanaging.AudioSettingsActivity;
+import com.e_mobadara.audiomanaging.AudioSettingsActivity;
 
 import java.util.Locale;
 
